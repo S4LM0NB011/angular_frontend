@@ -299,7 +299,7 @@
 </style>
 
 <!-- Toolbar -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-success" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" routerLink="/">
       <img src="assets/tilted.png">
@@ -314,9 +314,14 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <div>
-        <a class="navbar-item" routerLink="dashboard">
+      <div class="navbar-item">
+        <a routerLink="dashboard">
           Dashboard
+        </a>
+      </div>
+      <div class="navbar-item">
+        <a class="navbar-item" routerLink="event">
+          Events
         </a>
       </div>
     </div>

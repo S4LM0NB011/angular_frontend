@@ -7,7 +7,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router'
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  name: 'dashboard';
+  name: any;
 
   constructor(
     private route: ActivatedRoute, 
