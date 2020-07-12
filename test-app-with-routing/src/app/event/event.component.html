@@ -11,16 +11,16 @@
             </div>
         </div>
     </section>
-      <div class="hero has-text-centered is-primary">
+      <div *ngFor="let event of events" class="hero has-text-centered is-primary">
           <div class="hero-body">
-            <h1 class="title has-text-centered">Event One</h1>
+            <h1 class="title has-text-centered">{{event.title}}</h1>
           </div>
           <div class="hero-body">
-            <h2 class="subtitle">This is the first event!</h2>
-            <h3 class="description">This is the description of the first event.</h3>
+            <h2 class="subtitle">Post Number: {{event.id}}</h2>
+            <h3 class="description">{{event.body}}</h3>
           </div>
           <div class="hero-footer">
-              <p>this is the footer of the first event.</p>
+              <p>User ID: {{event.userId}}</p>
           </div>
       </div>
 </div>
