@@ -7,9 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./event.component.scss']
 })
 export class EventComponent implements OnInit {
-
-  protected events:any = [];
-
+  public events:any = [];
   constructor(private http: HttpClient) { }
 
   getEvents(){
