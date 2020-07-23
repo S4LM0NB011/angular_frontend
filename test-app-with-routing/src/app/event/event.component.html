@@ -1,27 +1,30 @@
-<div>
-    <section class="hero is-success">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title">
-                Events
-                </h1>
-                <h2 class="subtitle">
-                    <p>Check out all these events. Wow!</p>
-                </h2>
+<div class="parent">
+    <header class="has-text-centered">
+        <h1 class="title">
+        Events
+        </h1>
+        <h2 class="subtitle">
+            <p>Check out all these events. Wow!</p>
+        </h2>
+    </header>
+    <div class="left-side lightblue"> I am the left ad spot</div>
+    <main class="card-container">
+        <div *ngFor="let event of events" class="card has-text-centered">
+            <div>
+                <div>
+                    <h1 class="title has-text-centered card-small">{{event.title}}</h1>
+                    <div class="content">
+                        <h3 class="subtitle">Post Number: {{event.id}}</h3>
+                        <p class="description">{{event.body}}</p>
+                    </div>
+                    <div>
+                        <p>User ID: {{event.userId}}</p>
+                    </div>
+                </div>  
             </div>
         </div>
-    </section>
-      <div *ngFor="let event of events" class="hero has-text-centered is-primary">
-          <div class="hero-body">
-            <h1 class="title has-text-centered">{{event.title}}</h1>
-          </div>
-          <div class="hero-body">
-            <h2 class="subtitle">Post Number: {{event.id}}</h2>
-            <h3 class="description">{{event.body}}</h3>
-          </div>
-          <div class="hero-footer">
-              <p>User ID: {{event.userId}}</p>
-          </div>
-      </div>
+    </main>
+    <div class="right-side">I am the right ad spot</div>
+    <footer>Footer</footer> 
 </div>
 
